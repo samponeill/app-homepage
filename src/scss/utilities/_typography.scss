@@ -1,0 +1,68 @@
+body {
+    font-family: $font-primary;
+    color: $primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+    font-style: italic;
+}
+
+p {
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+p:last-of-type {
+    margin: 1rem 0 3rem 0;
+}
+
+p + h2, p + h3, p + h4, p + h5, p + h6 {
+    margin: 2rem 0 1rem 0;
+}
+
+
+/* Headings
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 300; }
+  h1 { font-size: 2.0rem; line-height: 1.2;  letter-spacing: .1rem;}
+  h2 { font-size: 1.75rem; line-height: 1.25; letter-spacing: .1rem; }
+  h3 { font-size: 1.5rem; line-height: 1.5;  letter-spacing: .05rem; }
+  h4 { font-size: 1.25rem; line-height: 1.35; letter-spacing: .08rem; }
+  h5 { font-size: 1rem; line-height: 1.5;  letter-spacing: .05rem; }
+  
+  /* Larger than phablet */
+  @media (min-width: 670px) {
+    h1 { font-size: 3.0rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+    h4 { font-size: 1.5rem; }
+    h5 { font-size: 1.25rem; }
+  }
+
+/* Links */
+
+.navbar-menu a, main a, footer a {
+    color: $blueberry;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-menu a:after, main a:after, footer a:after {
+    content: '';
+    margin-top: 3px;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: $primary;
+    transition: width .25s ease-in-out, transform .25s ease-in-out;
+    border-radius: $radius;
+}
+
+.navbar-menu a:hover::after, main a:hover::after, footer a:hover::after {
+    width: 100%;
+    transition: width .25s ease-in-out, transform .25s ease-in-out;
+}
+

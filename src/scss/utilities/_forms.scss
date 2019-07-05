@@ -1,0 +1,111 @@
+label {
+    font-size: 0.75rem;
+}
+
+form label {
+    font-size: 0.75rem;
+    margin: 0 0 0.5rem;
+    color: $darkgrey;
+    display: block;
+}
+
+input, textarea {
+    max-height: 45px;
+    border-radius: $radius;
+    border: $border;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0 0.5rem;
+    outline: none;
+    transform: translateY(0);
+    transition: transform 0.25s;
+}
+
+textarea {
+    min-height: 200px;
+}
+   
+input:focus, textarea:focus, button:focus {
+    box-shadow: 0 0 4px $pathway;
+    border: 2px solid $pathway;
+}
+
+.button {
+    transform: translateY(0);
+    transition: transform 0.25s;        
+    background: $background;
+    border: $border;
+    color: $blueberry;
+    border-color: $blueberry;
+    padding: 0.75rem 1rem;
+    min-height: 45px;
+    border-radius: $radius;
+    font-size: 1rem;
+    outline: none;
+}
+
+.primary {
+    background: $blueberry;
+    color: $background;
+}
+.action {
+    color: $action;
+    border-color: $action;
+}
+.primary.action {
+    color: $background;
+    background-color: $action;
+    border-color: $action;
+}
+
+form {
+    display: block;
+    text-align: left;
+    .form-grid {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        .form-column {
+            width: auto;
+            display: block;
+            box-sizing: border-box;
+        }
+        .form-column:first-child {
+            margin-right: 0.5rem;
+        }
+        .form-column:last-child {
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.page button {
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
+}
