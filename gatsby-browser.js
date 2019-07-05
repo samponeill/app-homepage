@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-import "./src/static/main";
+//import "./src/static/main";
 import "./src/scss/style.scss";
 
 // ES5 way
