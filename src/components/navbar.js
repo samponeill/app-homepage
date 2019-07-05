@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Logo from './Logo'
+import Logo from './logo'
 import Navlinks from './navlinks'
 
 class Navbar extends React.Component {
