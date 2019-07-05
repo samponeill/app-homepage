@@ -7,13 +7,14 @@ const Footer = () => (
         <div className="footer menu">
             <div className="container pad">
                 <div className="">
+                    <p>Site map</p>
                     <Navlinks />
                 </div>
                 <div className="">
-                    <Navlinks />
+                    <p>Social media</p>
                 </div>
                 <div className="">
-                    <Navlinks />
+                    <p>Other</p>                    
                 </div>
             </div>
         </div>

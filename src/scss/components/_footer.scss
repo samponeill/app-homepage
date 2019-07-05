@@ -7,35 +7,40 @@ footer {
         width: 100%;
         padding: 1rem 0;
     }
-}
-
-.post {
-    background: $primary;
-    font-size: 0.75rem;
-    color: $background;
-    a {
+    .post {
+        background: $primary;
+        font-size: 0.75rem;
         color: $background;
-    }
-    a:after {
-        background: $background;
-    }
-}
-
-.menu {
-    .container.pad {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         a {
-            display: block;
-            padding: 0.5rem 0;
-            text-align: left;
             color: $background;
         }
         a:after {
-            content: none;
+            background: $background;
         }
-        a:hover::after {
-            content: none;
+    }
+
+    .menu {
+        .container.pad {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            color: $background;
+            margin-bottom: 3rem;
+            p {
+                margin: 0 0 1rem;
+                font-weight: bold;
+            }
+            a {
+                display: block;
+                padding: 0.5rem 0;
+                text-align: left;
+                color: $background;
+            }
+            a:after {
+                content: none;
+            }
+            a:hover::after {
+                content: none;
+            }
         }
     }
 }
