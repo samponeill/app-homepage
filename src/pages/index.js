@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "../components/Image"
+import Image from "../components/image"
 
 const IndexPage = () => (
   <Layout>
@@ -16,7 +16,7 @@ const IndexPage = () => (
         To find out more, sign up to our waiting list:
       </p>
       <div>
-        <form>
+        <form name="Register interest" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
           <label for="email">Email:</label>
           <input name="email" type="text"></input>
           <button className="button shadow" type="submit">Register</button>

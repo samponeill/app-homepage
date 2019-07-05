@@ -12,7 +12,7 @@ const IndexPage = () => (
             Sign up to our waiting list and get the latest updates sent to your inbox 
         </p>
         <div>
-            <form>
+            <form name="Contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                 <div className="form-grid">
                     <div className="form-column">
                         <label for="email">Name:</label>
