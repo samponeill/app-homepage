@@ -5,6 +5,10 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+    },
     {
       resolve: `gatsby-plugin-styled-components`,
     },
@@ -18,8 +22,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,8 +44,6 @@ module.exports = {
         }
       }
     },    
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
