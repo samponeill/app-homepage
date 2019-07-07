@@ -5,7 +5,7 @@ import Image from "../components/image"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="The flexible pension app for flexible workers" />
+    <SEO title="The flexible pension app for flexible workers" />  
     <section className="home">
     <div className="column">
       <h1>Finally, a pension for all you self-employed go-getters</h1>

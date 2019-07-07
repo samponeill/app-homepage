@@ -13,11 +13,6 @@ const SuccessPage = () => (
         We will be in touch with updates and more.
       </p>
       <div>
-        <form name="Register interest" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
-          <label for="email">Email:</label>
-          <input name="email" type="text"></input>
-          <button className="button shadow" type="submit">Register</button>
-        </form>
       </div>
     </div>
     </section>

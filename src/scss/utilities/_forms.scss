@@ -32,7 +32,7 @@ input:focus, textarea:focus, button:focus {
     border: 2px solid $pathway;
 }
 
-.button {
+.button, .cookieConsent button {
     transform: translateY(0);
     transition: transform 0.25s;        
     background: $background;
@@ -83,6 +83,11 @@ form {
 .page button {
     margin: 1rem auto;
     display: block;
+}
+
+.cookieConsent {
+    background: $primary;
+    color: $background;
 }
 
 /* Larger than mobile */
