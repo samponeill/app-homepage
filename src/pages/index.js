@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Image from "../components/image"
 import SplitText from 'react-pose-text'
 import { useInView, InView } from 'react-intersection-observer'
+import posed, { PoseGroup } from 'react-pose'
 
 const IndexPage = () => {
   const [ref, inView] = useInView({
@@ -20,6 +21,11 @@ const IndexPage = () => {
     }
   };
 
+  const Item = posed.div({
+    enter: { opacity: 1 },
+    exit: { opacity: 0 }
+  })
+
   return (
     <Layout>
       <SEO title="The flexible pension app for flexible workers" />  
@@ -31,7 +37,8 @@ const IndexPage = () => {
             Finally, a pension for all you self-employed go-getters
           </SplitText>
         </h1>
-      </InView>        
+      </InView>
+      <InView> 
         <p>
           No minimum contributions, low annual fees and a smooth setup. We’re as flexible as you are, baby. 
         </p>
@@ -45,6 +52,7 @@ const IndexPage = () => {
             <button className="button shadow" type="submit">Register</button>
           </form>
         </div>
+      </InView>
       </div>
       <div className="column">
         <Image />

@@ -39,7 +39,7 @@ $radius: 5px;
 
 .shadow {
     @include boxshadow();
-    transition: all 0.3s;
+    transition: all 0.1s;
 }
 
 @import "./utilities/reset";

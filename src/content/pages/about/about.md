@@ -4,8 +4,6 @@ title: "About us"
 tags: "about"
 ---
 
-![Freelance](./shridhar-gupta-dZxQn4VEv2M-unsplash.jpg)
-
 We want to help you secure a better future. 
 
 ## Our values
