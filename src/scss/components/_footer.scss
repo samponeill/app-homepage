@@ -31,9 +31,12 @@ footer {
             }
             a {
                 display: block;
-                padding: 0.5rem 0;
+                margin: 0.5rem 0;
                 text-align: left;
                 color: $background;
+            }
+            a.social-icon {
+                margin-right: 0.5rem;
             }
             a:after {
                 content: none;

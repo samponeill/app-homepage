@@ -1,4 +1,5 @@
 import React from "react"
+import { SocialIcon } from 'react-social-icons';
 import Navlinks from "./navlinks"
 
 const Footer = () => (
@@ -11,7 +12,12 @@ const Footer = () => (
                     <Navlinks />
                 </div>
                 <div className="">
-                    <p>Social media</p>
+                    <p>We are social</p>
+                    <div>
+                        <SocialIcon style={{ height: 25, width: 25 }} url="http://twitter.com" network="twitter" bgColor="#ffffff" />
+                        <SocialIcon style={{ height: 25, width: 25 }} url="http://linkedin.com" network="linkedin" bgColor="#ffffff" />
+                        <SocialIcon style={{ height: 25, width: 25 }} url="mailto:sam@samponeill.com" network="email" bgColor="#ffffff" />
+                    </div>
                 </div>
                 <div className="">
                     <p>Other</p>                    
