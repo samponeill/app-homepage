@@ -18,9 +18,10 @@
     "gatsby-plugin-sharp": "^2.2.2",
     "gatsby-plugin-styled-components": "^3.1.0",
     "gatsby-remark-a11y-emoji": "^1.0.0",
+    "gatsby-remark-images": "^3.1.4",
     "gatsby-source-filesystem": "^2.1.2",
     "gatsby-transformer-remark": "^2.6.0",
-    "gatsby-transformer-sharp": "^2.2.1",
+    "gatsby-transformer-sharp": "^2.2.2",
     "intersection-observer": "^0.7.0",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
@@ -30,7 +31,10 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-intersection-observer": "^8.23.0",
+    "react-pose": "^4.0.8",
+    "react-pose-text": "^3.1.0",
     "react-social-icons": "^4.1.0",
+    "react-spring": "^8.0.27",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {

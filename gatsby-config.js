@@ -1,4 +1,5 @@
 module.exports = {
+  
   siteMetadata: {
     title: `Jamjar`,
     description: `The flexible pension app for flexible workers`,
@@ -18,6 +19,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+            },
+          },          
           'gatsby-remark-a11y-emoji',
         ],
       },

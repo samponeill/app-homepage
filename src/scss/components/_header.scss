@@ -2,9 +2,8 @@
     width: 100vw;
     height: 1px;
     display: block;
-    display: absolute;
+    position: absolute;
     top: 0;
-    z-index: -1;
 }
 .header-wrap {
     position: sticky;

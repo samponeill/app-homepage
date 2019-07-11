@@ -5,8 +5,7 @@ import { useInView } from 'react-intersection-observer'
 
 const Header = () => {
   const [ref, inView] = useInView({
-    /* Optional options */
-    threshold: 1,
+    threshold: 0,
   })
 
   return (
