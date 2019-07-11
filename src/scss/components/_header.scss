@@ -1,10 +1,21 @@
+.sentinel {
+    width: 100vw;
+    height: 1px;
+    display: block;
+    display: absolute;
+    top: 0;
+    z-index: -1;
+}
 .header-wrap {
     position: sticky;
     top: 0;
     z-index: 100;
-    background: $background;
     overflow: hidden;
     box-sizing: border-box;
+    transition: all 0.3s;
+}
+.header-wrap.shadow {
+    background: $background;
 }
 header {
     padding: 1.5rem 0 1.25rem;

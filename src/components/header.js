@@ -1,14 +1,26 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Navbar from "./navbar"
+import { useInView } from 'react-intersection-observer'
 
-const Header = ({ siteTitle }) => (
-  <div className="header-wrap shadow">
-    <header>
-        <Navbar />
-    </header>
-   </div>
-)
+const Header = () => {
+  const [ref, inView] = useInView({
+    /* Optional options */
+    threshold: 1,
+  })
+
+  return (
+    <>
+      <div ref={ref} className="sentinel"></div>
+      <div className={`header-wrap ${inView ? `` : `shadow`}`}>
+      <header>
+          <Navbar />
+      </header>
+    </div>
+   </>
+  )
+}
+
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
