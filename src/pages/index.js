@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Image from "../components/image"
 import SplitText from 'react-pose-text'
 import { useInView, InView } from 'react-intersection-observer'
-import posed, { PoseGroup } from 'react-pose'
+import posed from 'react-pose'
 
 const IndexPage = () => {
   const [ref, inView] = useInView({
@@ -21,10 +21,10 @@ const IndexPage = () => {
     }
   };
 
-  const Item = posed.div({
+  const Item = {
     enter: { opacity: 1 },
     exit: { opacity: 0 }
-  })
+  }
 
   return (
     <Layout>
@@ -32,26 +32,32 @@ const IndexPage = () => {
       <section className="home">
       <div className="column">
       <InView>
-        <h1>          
-          <SplitText initialPose="exit" pose="enter" charPoses={charPoses}>
-            Finally, a pension for all you self-employed go-getters
-          </SplitText>
-        </h1>
+        {({ inView, ref }) => (
+          <h1 ref={ref}>          
+            <SplitText pose={inView ? 'enter' : 'exit'} charPoses={charPoses}>
+              Finally, a pension for all you self-employed go-getters
+            </SplitText>
+          </h1>
+        )}
       </InView>
-      <InView> 
-        <p>
-          No minimum contributions, low annual fees and a smooth setup. We’re as flexible as you are, baby. 
-        </p>
-        <p>
-          To find out more, sign up to our waiting list:
-        </p>
-        <div>
-          <form name="Register interest" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
-            <label for="email">Email:</label>
-            <input name="email" type="text"></input>
-            <button className="button shadow" type="submit">Register</button>
-          </form>
-        </div>
+      <InView>
+          <p>
+            <SplitText initialPose="exit" pose="enter" charPoses={Item}>            
+              No minimum contributions, low annual fees and a smooth setup. We’re as flexible as you are, baby. 
+            </SplitText>
+          </p>
+          <p>
+            <SplitText initialPose="exit" pose="enter" charPoses={Item}>            
+              To find out more, sign up to our waiting list:
+            </SplitText>
+          </p>
+          <div>
+            <form name="Register interest" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+              <label for="email">Email:</label>
+              <input name="email" type="text"></input>
+              <button className="button shadow" type="submit">Register</button>
+            </form>
+          </div>
       </InView>
       </div>
       <div className="column">

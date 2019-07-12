@@ -31,12 +31,13 @@ footer {
             }
             a {
                 display: block;
-                margin: 0.5rem 0;
+                margin: 1.5rem 0;
                 text-align: left;
                 color: $background;
             }
             a.social-icon {
                 margin-right: 0.5rem;
+                margin-top: 0.5rem;
             }
             a:after {
                 content: none;
