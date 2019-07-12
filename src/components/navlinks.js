@@ -13,6 +13,7 @@ const Navlinks = () => (
         bg="#FFF7F7"
         direction="right"
         duration={0.25}
+        activeClassName="active"
         >
         <div className="navbar-link">
             Home
@@ -24,7 +25,8 @@ const Navlinks = () => (
         fade top="entry"
         bg="#FFF7F7"
         direction="right"
-        duration={0.25}    
+        duration={0.25}
+        activeClassName="active"
         >
         <div className="navbar-link">
             About
@@ -36,7 +38,8 @@ const Navlinks = () => (
         fade top="entry"
         bg="#FFF7F7"
         direction="right"
-        duration={0.25}     
+        duration={0.25}
+        activeClassName="active"
         >
         <div className="navbar-link">
             Register your interest

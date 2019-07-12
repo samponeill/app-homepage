@@ -27,13 +27,13 @@ export default function Template({
 <Layout>
     <SEO title={frontmatter.title} />
     <section className={`page ` +  frontmatter.tags}>
-    <div className="column">
-      <h1>{frontmatter.title}</h1>
-      <div
-          className="page-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-    </div>
+      <div className="column">
+        <h1>{frontmatter.title}</h1>
+        <div
+            className="page-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+      </div>
     </section>
   </Layout>
 
