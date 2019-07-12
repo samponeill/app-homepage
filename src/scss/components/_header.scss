@@ -1,9 +1,10 @@
 .sentinel {
-    width: 100vw;
+    max-width: 100vw;
     height: 1px;
     display: block;
     position: absolute;
     top: 0;
+    box-sizing: border-box;
 }
 .header-wrap {
     position: sticky;
