@@ -35,7 +35,7 @@ main {
     }
     section.home .column {
         p {
-            max-width: 66%;
+            max-width: 100%;
         }
     }
 }
@@ -73,6 +73,11 @@ main {
             display: grid;
             grid-template-columns: 1fr 300px; 
         }
+        section.home .column {
+            p {
+                max-width: 66%;
+            }
+        } 
     } 
 }
 

@@ -63,6 +63,7 @@ input:focus, textarea:focus, button:focus {
 form {
     display: block;
     text-align: left;
+    width: 100%;
     .form-grid {
         display: grid; 
         grid-template-columns: 1fr 1fr;
@@ -107,7 +108,15 @@ form {
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-
+    .container {
+        section {
+            .column {
+                form {
+                    max-width: 66%;
+                }
+            }
+        }
+    }
 }
 
 /* Larger than Desktop HD */
