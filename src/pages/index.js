@@ -17,7 +17,7 @@ const IndexPage = () => {
     enter: {
       opacity: 1,
       y: 0,
-      delay: ({ charIndex }) => charIndex * 20
+      delay: ({ charIndex }) => charIndex * 30
     }
   };
 
@@ -33,14 +33,13 @@ const IndexPage = () => {
       <div className="column">
       <InView>
         {({ inView, ref }) => (
-          <h1 ref={ref}>          
+          <h1 ref={ref}>
             <SplitText pose={inView ? 'enter' : 'exit'} charPoses={charPoses}>
               Finally, a pension for all you self-employed go-getters
             </SplitText>
           </h1>
         )}
       </InView>
-      <InView>
           <p>
             <SplitText initialPose="exit" pose="enter" charPoses={Item}>            
               No minimum contributions, low annual fees and a smooth setup. We’re as flexible as you are, baby. 
@@ -58,7 +57,6 @@ const IndexPage = () => {
               <button className="button shadow" type="submit">Register</button>
             </form>
           </div>
-      </InView>
       </div>
       <div className="column">
         <Image />
