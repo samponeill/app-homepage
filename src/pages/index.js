@@ -50,7 +50,7 @@ const IndexPage = () => {
               To find out more, sign up to our waiting list:
             </SplitText>
           </p>
-          <div>
+          <div style={{display: "block"}}>
             <form name="Register interest" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
               <label for="email">Email:</label>
               <input name="email" type="text"></input>
