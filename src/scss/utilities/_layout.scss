@@ -4,6 +4,10 @@ body,html,section {
     box-sizing: border-box;
 }
 
+.tl-edges {
+    overflow: visible;
+}
+
 .container {
     margin: 0 1rem;
     max-width: 100%;

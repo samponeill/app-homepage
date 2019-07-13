@@ -1,6 +1,4 @@
 .sentinel {
-    max-width: 100vw;
-    height: 1px;
     display: block;
     position: absolute;
     top: 0;
@@ -10,7 +8,6 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    overflow: hidden;
     box-sizing: border-box;
     transition: all 0.1s;
 }
