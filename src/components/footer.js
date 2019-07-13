@@ -1,10 +1,12 @@
 import React from "react"
 import { SocialIcon } from 'react-social-icons';
 import Navlinks from "./navlinks"
+import Wave from "../images/wave.svg"
 
 const Footer = () => (
     <>
     <footer>
+        <div style={{height: "150px", overflow: "hidden", background: "none", padding: "0"}}><Wave /></div>        
         <div className="footer menu">
             <div className="container pad">
                 <div className="">

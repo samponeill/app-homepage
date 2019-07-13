@@ -3,12 +3,12 @@ footer {
     bottom: 0;
     width: 100%;    
     > div {
-        background: $darkgrey;
+        background: $primary;
         width: 100%;
         padding: 1rem 0;
     }
     .post {
-        background: $primary;
+        background: $darkgrey;
         font-size: 0.75rem;
         color: $background;
         a {
