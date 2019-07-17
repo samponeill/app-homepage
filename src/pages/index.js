@@ -41,14 +41,10 @@ const IndexPage = () => {
         )}
       </InView>
           <p>
-            <SplitText initialPose="exit" pose="enter" charPoses={Item}>            
               No minimum contributions, low annual fees and a smooth setup. We’re as flexible as you are, baby. 
-            </SplitText>
           </p>
           <p>
-            <SplitText initialPose="exit" pose="enter" charPoses={Item}>            
               To find out more, sign up to our waiting list:
-            </SplitText>
           </p>
           <div style={{display: "block"}}>
             <form name="Register interest" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">

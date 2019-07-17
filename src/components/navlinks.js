@@ -6,45 +6,33 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Navlinks = () => (
     <>
-    <AniLink
+    <Link
         className="navbar-link-wrapper"    
         to="/"
-        fade top="entry"
-        bg="#FFF7F7"
-        direction="right"
-        duration={0.25}
         activeClassName="active"
         >
         <div className="navbar-link">
             Home
         </div>
-    </AniLink>
-    <AniLink
+    </Link>
+    <Link
         className="navbar-link-wrapper"    
         to="/about"
-        fade top="entry"
-        bg="#FFF7F7"
-        direction="right"
-        duration={0.25}
         activeClassName="active"
         >
         <div className="navbar-link">
             About
         </div>
-    </AniLink>
-    <AniLink
+    </Link>
+    <Link
         className="navbar-link-wrapper"
         to="/about"
-        fade top="entry"
-        bg="#FFF7F7"
-        direction="right"
-        duration={0.25}
         activeClassName="active"
         >
         <div className="navbar-link">
             Register your interest
         </div>
-    </AniLink>
+    </Link>
     </>
 )
 
