@@ -23,9 +23,9 @@ const IndexPage = () => (
                         <input name="email" type="text"></input>
                     </div>
                 </div>
-                <label for="message">Message</label>
-                <textarea type="textarea" name="message"></textarea>                
-                <button className="button shadow" type="submit">Sign up</button>
+                <label for="comments">Comments:</label>
+                <textarea type="textarea" name="comments"></textarea>                
+                <button className="button shadow" type="submit">Register</button>
             </form>
         </div>
         </div>

@@ -22,13 +22,17 @@ export default function Template({
       y: 0,
       delay: ({ charIndex }) => charIndex * 20
     }
-  };
+  }
   return (
 <Layout>
     <SEO title={frontmatter.title} />
     <section className={`page ` +  frontmatter.tags}>
       <div className="column">
-        <h1>{frontmatter.title}</h1>
+        <h1 ref={ref}>
+            <SplitText pose={inView ? 'enter' : 'exit'} charPoses={charPoses}>
+              {frontmatter.title}
+            </SplitText>
+          </h1>
         <div
             className="page-content"
             dangerouslySetInnerHTML={{ __html: html }}

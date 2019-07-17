@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import Logo from './logo'
-import Navlinks from './navlinks'
+import Link from "gatsby-link";
+import Logo from './logo';
+import Navlinks from './navlinks';
 
 class Navbar extends React.Component {
   
@@ -66,7 +66,7 @@ class Navbar extends React.Component {
                 </Link>
             </div>            
             <div className="navbar-button navbar-chunk">
-                <button className="button primary shadow" type="submit">Register</button>
+                <Link to="/register-interest" className="button primary shadow">Register</Link>
             </div>
         </nav>)
   }

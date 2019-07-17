@@ -1,5 +1,6 @@
 import React from "react"
-import { SocialIcon } from 'react-social-icons';
+import { SocialIcon } from 'react-social-icons'
+import Link from "gatsby-link"
 import Navlinks from "./navlinks"
 import Wave from "../images/wave.svg"
 
@@ -10,8 +11,29 @@ const Footer = () => (
         <div className="footer menu">
             <div className="container pad">
                 <div className="">
-                    <p>Site map</p>
+                    <p>Useful links</p>
                     <Navlinks />
+                </div>
+                <div className="">
+                    <p>Legal stuff</p>
+                    <Link
+                    className="navbar-link-wrapper"
+                    to="/terms-conditions"
+                    activeClassName="active"
+                    >
+                        <div className="navbar-link">
+                            Terms and conditions
+                        </div>
+                    </Link>
+                    <Link
+                    className="navbar-link-wrapper"
+                    to="/privacy-policy"
+                    activeClassName="active"
+                    >
+                        <div className="navbar-link">
+                            Privacy policy
+                        </div>
+                    </Link>                               
                 </div>
                 <div className="">
                     <p>We are social</p>
@@ -20,17 +42,13 @@ const Footer = () => (
                         <SocialIcon style={{ height: 25, width: 25 }} url="http://linkedin.com" network="linkedin" bgColor="#ffffff" />
                         <SocialIcon style={{ height: 25, width: 25 }} url="mailto:sam@samponeill.com" network="email" bgColor="#ffffff" />
                     </div>
-                </div>
-                <div className="">
-                    <p>Other</p>                    
-                </div>
+                </div>                
             </div>
         </div>
         <div className="footer post">
             <div className="container pad">
-                © {new Date().getFullYear()}, Built by
-                {` `}
-                <a href="https://spo.design">SPO Design Co.</a>
+                <p>With pensions, as with all investments, your capital is at risk and the value of your pension with Jamjar may go up as well as down. You may get back less than you put in.</p>
+                <p>© {new Date().getFullYear()}, Built by{` `}<a href="https://spo.design">SPO Design Co.</a></p>
             </div>
         </div>
     </footer>        

@@ -44,6 +44,7 @@ input:focus, textarea:focus, button:focus {
     border-radius: $radius;
     font-size: 1rem;
     outline: none;
+    text-decoration: none;
 }
 
 .primary {
@@ -109,7 +110,7 @@ form {
 /* Larger than desktop */
 @media (min-width: 1000px) {
     .container {
-        section {
+        section.home {
             .column {
                 form {
                     max-width: 66%;

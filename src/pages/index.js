@@ -50,14 +50,14 @@ const IndexPage = () => {
             <form name="Register interest" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
               <label for="email">Email:</label>
               <input name="email" type="text"></input>
-              <button className="button shadow" type="submit">Register</button>
+              <button className="button shadow" type="submit">Sign up</button>
             </form>
           </div>
       </div>
       <div className="column">
         <Image />
       </div>
-      </section>
+      </section>    
     </Layout>
   )
 }

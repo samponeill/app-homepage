@@ -1,8 +1,5 @@
 import React from "react"
-import Link from 'gatsby-plugin-transition-link'
-import TransitionLink from 'gatsby-plugin-transition-link'
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-
+import Link from "gatsby-link";
 
 const Navlinks = () => (
     <>
@@ -26,7 +23,7 @@ const Navlinks = () => (
     </Link>
     <Link
         className="navbar-link-wrapper"
-        to="/about"
+        to="/register-interest"
         activeClassName="active"
         >
         <div className="navbar-link">
