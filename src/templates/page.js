@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SplitText from 'react-pose-text'
-import { useInView, InView } from 'react-intersection-observer'
+import { useInView } from 'react-intersection-observer'
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
