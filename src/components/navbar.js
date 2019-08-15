@@ -25,8 +25,7 @@ class Navbar extends React.Component {
                     <button
                     type="button"
                     name="Menu"
-                    aria-label="menu"
-                    aria-controls="navigation"
+                    aria-expanded={this.state.showMenu}
                     className={`burger-button burger ${burgerActive}`}
                     >
                             <span id="burgertop"></span>
@@ -45,8 +44,7 @@ class Navbar extends React.Component {
                                 <button
                                     type="button"
                                     name="Close"
-                                    aria-label="Close"
-                                    aria-controls="navigation"
+                                    aria-expanded={this.state.showMenu}
                                     className={`burger-button burger ${burgerActive}`}
                                 >
                                     <span id="burger-top"></span>
