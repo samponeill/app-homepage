@@ -1,0 +1,10 @@
+@mixin boxshadow($h: 0px, $v: 2px, $b: 5px, $s: -3px, $color: $darkgrey){
+    -webkit-box-shadow : $h $v $b $s $color;
+    -moz-box-shadow : $h $v $b $s $color;
+    box-shadow : $h $v $b $s $color;
+}
+
+.shadow {
+    @include boxshadow();
+    transition: all 0.1s;
+}

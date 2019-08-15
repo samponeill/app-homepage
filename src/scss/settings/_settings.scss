@@ -1,0 +1,26 @@
+$font-primary: "europa", "Helvetica", "Arial", sans-serif;
+$font-heading: "ff-tisa-sans-web-pro", "Helvetica", "Arial", sans-serif;
+
+$damson: #09003C;
+$rosepetal: #FFF7F7;
+$raspberry: #FF8d8d;
+$blueberry: #2600FF;
+$background: #FFFFFF;
+
+$rainbow: linear-gradient(45deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+
+$action: #00A746;
+$danger: #D55454;
+$warning: #E27E4A;
+
+$darkgrey: #5F5F5F;
+$lightgrey: #F2F2F2;
+$bluegrey: #FBFAFF;
+
+$primary: $damson;
+$highlight: $raspberry;
+$altbackground: $rosepetal;
+$pathway: $blueberry;
+
+$border: 2px solid $primary;
+$radius: 5px;
