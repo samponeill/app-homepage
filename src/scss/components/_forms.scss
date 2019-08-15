@@ -45,6 +45,10 @@ input:focus, textarea:focus, button:focus {
     font-size: 1rem;
     outline: none;
     text-decoration: none;
+    &:disabled {
+        box-shadow: none;
+        opacity: 0.5;
+    }
 }
 
 .primary {
@@ -59,6 +63,11 @@ input:focus, textarea:focus, button:focus {
     color: $background;
     background-color: $action;
     border-color: $action;
+}
+
+.disabled {
+    box-shadow: none;
+    opacity: 0.5;
 }
 
 form {
