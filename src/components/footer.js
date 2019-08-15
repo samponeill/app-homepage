@@ -38,9 +38,9 @@ const Footer = () => (
                 <div className="">
                     <p>We are social</p>
                     <div>
-                        <SocialIcon style={{ height: 25, width: 25 }} url="http://twitter.com" network="twitter" bgColor="#ffffff" />
-                        <SocialIcon style={{ height: 25, width: 25 }} url="http://linkedin.com" network="linkedin" bgColor="#ffffff" />
-                        <SocialIcon style={{ height: 25, width: 25 }} url="mailto:sam@samponeill.com" network="email" bgColor="#ffffff" />
+                        <SocialIcon style={{ height: 45, width: 45, display: "inline-block" }} url="http://twitter.com" network="twitter" bgColor="#ffffff" />
+                        <SocialIcon style={{ height: 45, width: 45, display: "inline-block" }} url="http://linkedin.com" network="linkedin" bgColor="#ffffff" />
+                        <SocialIcon style={{ height: 45, width: 45, display: "inline-block" }} url="mailto:sam@samponeill.com" network="email" bgColor="#ffffff" />
                     </div>
                 </div>                
             </div>

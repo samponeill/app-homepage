@@ -25,13 +25,13 @@ class Navbar extends React.Component {
                     <button
                     type="button"
                     name="Menu"
-                    aria-label="Menu"
+                    aria-label="menu"
                     aria-controls="navigation"
                     className={`burger-button burger ${burgerActive}`}
                     >
-                            <span id="burger-top"></span>
-                            <span id="burger-mid"></span>
-                            <span id="burger-btm"></span>
+                            <span id="burgertop"></span>
+                            <span id="burgermid"></span>
+                            <span id="burgerbtm"></span>
                     </button>
                     <label for="Menu">Menu</label>                            
                 </div>                            
@@ -61,7 +61,7 @@ class Navbar extends React.Component {
                 </div>                
             </div>
             <div className="navbar-brand navbar-chunk">
-                <Link className="navbar-item" to="/">
+                <Link aria-label="Jamjar logo" className="navbar-item" to="/">
                     <Logo />
                 </Link>
             </div>            

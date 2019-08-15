@@ -15,8 +15,8 @@ const IndexPage = () => (
             <form name="Contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
                 <div className="form-grid">
                     <div className="form-column">
-                        <label for="email">Name:</label>
-                        <input name="email" type="text"></input>
+                        <label for="name">Name:</label>
+                        <input name="name" type="text"></input>
                     </div>
                     <div className="form-column">
                         <label for="email">Email:</label>
