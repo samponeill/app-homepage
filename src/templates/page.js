@@ -10,29 +10,14 @@ export default function Template({
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  const [ref, inView] = useInView({
-    /* Optional options */
-    threshold: 1,
-  })
-
-  const charPoses = {
-    exit: { opacity: 0, y: 10 },
-    enter: {
-      opacity: 1,
-      y: 0,
-      delay: ({ charIndex }) => charIndex * 20
-    }
-  }
   return (
 <Layout>
     <SEO title={frontmatter.title} />
     <section className={`page ` +  frontmatter.tags}>
       <div className="column">
-        <h1 ref={ref}>
-            <SplitText pose={inView ? 'enter' : 'exit'} charPoses={charPoses}>
-              {frontmatter.title}
-            </SplitText>
-          </h1>
+        <h1>
+            {frontmatter.title}
+        </h1>
         <div
             className="page-content"
             dangerouslySetInnerHTML={{ __html: html }}

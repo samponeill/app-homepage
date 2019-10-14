@@ -30,12 +30,6 @@ const IndexPage = () => {
         <Image />
       </div>
       </section>
-      <section className="band">
-        <div className="hero"></div>
-        <div className="column"></div>
-        <div className="column"></div>
-        <div className="column"></div>
-      </section>   
     </Layout>
   )
 }
