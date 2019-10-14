@@ -4,6 +4,12 @@
     box-shadow : $h $v $b $s $color;
 }
 
+@mixin boxshadowHover($h: 0px, $v: 0px, $b: 0px, $s: 0px, $color: $darkgrey){
+    -webkit-box-shadow : $h $v $b $s $color;
+    -moz-box-shadow : $h $v $b $s $color;
+    box-shadow : $h $v $b $s $color;
+}
+
 .shadow {
     @include boxshadow();
     transition: all 0.1s;

@@ -33,8 +33,7 @@ input:focus, textarea:focus, button:focus {
 }
 
 .button, .cookieConsent button {
-    transform: translateY(0);
-    transition: transform 0.25s;        
+    transition: transform 0.25s, box-shadow 0.25s;        
     background: $background;
     border: $border;
     color: $blueberry;
@@ -45,9 +44,18 @@ input:focus, textarea:focus, button:focus {
     font-size: 1rem;
     outline: none;
     text-decoration: none;
+    @include boxshadow();
+    cursor: pointer;
     &:disabled {
         box-shadow: none;
         opacity: 0.5;
+    }
+    &:hover {
+        @include boxshadowHover();
+        transition: background-color 0.25s, box-shadow 0.15s;
+    }
+    &:not(.primary):not(.action):not(.disabled):hover {
+        background-color: $bluegrey;
     }
 }
 
