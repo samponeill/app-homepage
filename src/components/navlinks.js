@@ -1,5 +1,6 @@
-import React from "react"
+import React from "react";
 import Link from "gatsby-link";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Navlinks = () => (
     <>

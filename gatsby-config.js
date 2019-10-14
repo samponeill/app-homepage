@@ -1,3 +1,10 @@
+const { apiEndpoint } = require('./prismic-configuration');
+var repo = /([^\/]+)\.prismic\.io/.exec(apiEndpoint);
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   
   siteMetadata: {
@@ -6,7 +13,32 @@ module.exports = {
     author: `Sam O'Neill`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`,    
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-prismic-graphql`,
+      options: {
+        repositoryName: repo[1],
+        path: '/preview',
+        previews: true,
+        accessToken: `${process.env.API_KEY}`,
+        omitPrismicScript: false,
+        pages: [
+        {
+          type: 'Page',
+          path: '/:uid',
+          component: require.resolve('./src/templates/page.js')
+        },
+        {
+          type: 'Index',
+          path: '/',
+          component: require.resolve('./src/pages/index.js')
+        }],        
+        sharpKeys: [
+          /image|photo|picture/, // (default)
+        ]
+      }
+    },    
     `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-sharp`,
