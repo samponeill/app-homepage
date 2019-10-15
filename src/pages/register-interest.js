@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const RegisterForm = () => (
   <Layout>
     <SEO title="Contact us" />
     <section className="page">
@@ -33,4 +33,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default RegisterForm

@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
 }
 
-.navbar-menu a:after, main a:after, footer a:after {
+.navbar-menu a:after, main a:not(.button):after, footer a:after {
     content: '';
     margin-top: 3px;
     display: block;
@@ -61,8 +61,15 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: $radius;
 }
 
-.navbar-menu a:hover::after, main a:hover::after, footer a:hover::after {
+.navbar-menu a:hover::after, main a:not(.button):after, footer a:hover::after {
     width: 100%;
     transition: width .25s ease-in-out, transform .25s ease-in-out;
 }
 
+main a.button {
+    display: inline-block;
+    height: auto;
+    min-height: auto;
+    width: auto;
+    box-sizing: border-box;
+}
