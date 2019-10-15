@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/layouts"
 import SEO from "../components/seo"
 import Image from "../components/image"
 import CTA from '../components/slices/CTA'
@@ -9,6 +9,7 @@ import TextRight from '../components/slices/TextRight'
 import { Link, graphql } from 'gatsby'
 import { RichText } from 'prismic-reactjs'
 import { linkResolver } from '../utils/linkResolver'
+import { Helmet } from 'react-helmet'
 
 export const query = graphql`
 query IndexQuery {

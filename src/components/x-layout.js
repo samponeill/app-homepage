@@ -8,27 +8,37 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Glob from "../images/glob.svg"
 import Header from "./header"
 import Footer from "./footer"
+import { Helmet } from 'react-helmet'
+
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+  query MetaQuery {
+    prismic {
+      allIndexs {
+        edges {
+          node {
+            meta_title
+            meta_description
+          }
         }
       }
     }
-  `)
+  }
+`)
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="description" content={data.allIndexs.edges[0].node.meta_description} />
+        <title>{data.allIndexs.edges[0].node.meta_title}</title>
+      </Helmet>
       <section className="background">
         <Glob />
       </section>
-      <Header className="container pad" siteTitle={data.site.siteMetadata.title} />
       <div>
         <main className="container pad">{children}</main>
         <Footer></Footer>
@@ -42,3 +52,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+

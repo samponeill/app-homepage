@@ -2,7 +2,7 @@ import React from 'react'
 import { RichText } from 'prismic-reactjs'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from "../components/layouts"
 
 export const query = graphql`
 query PageQuery($uid: String) {
