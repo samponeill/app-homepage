@@ -12,6 +12,7 @@ query PageQuery($uid: String) {
         node {
           page_text
           page_title
+          meta_title
         }
       }
     }
@@ -20,7 +21,7 @@ query PageQuery($uid: String) {
 `
 const RenderBody = ({ pageData }) => (
   <React.Fragment>
-    <section class="page">    
+    <section className="page">    
       <div className="column">
         {RichText.render(pageData.page_title)}
         <div className="page-content">
@@ -39,7 +40,7 @@ const Page = props => {
     <Layout>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{RichText.asText(doc.node.page_title)}</title>
+        <title>{RichText.asText(doc.node.meta_title)}</title>
       </Helmet>
       <RenderBody pageData={doc.node} />
     </Layout>
@@ -47,3 +48,4 @@ const Page = props => {
 }
 
 export default Page;
+

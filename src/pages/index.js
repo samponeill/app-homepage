@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layouts"
-import SEO from "../components/seo"
-import Image from "../components/image"
+import Img from 'gatsby-image'
 import CTA from '../components/slices/CTA'
 import Features from '../components/slices/Features'
 import TextLeft from '../components/slices/TextLeft'
@@ -19,6 +18,16 @@ query IndexQuery {
         node {
           intro
           heading
+          meta_title
+          meta_description
+          image
+          imageSharp {
+            childImageSharp {
+              fluid(maxWidth: 600) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           body {
             ... on PRISMIC_IndexBodyForm {
               type
@@ -152,7 +161,7 @@ const RenderIndexBody = ({ home }) => (
           }
       </div>
       <div className="column">
-        <Image />
+        <Img fluid={home.imageSharp.childImageSharp.fluid} />
       </div>
       </section>
     <div className="homepage-slices-wrapper">
@@ -167,6 +176,11 @@ const IndexPage = data => {
 
   return(
     <Layout>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="description" content={RichText.asText(doc.node.meta_description)}/>
+        <title>{RichText.asText(doc.node.meta_title)}</title>
+      </Helmet>
       <RenderIndexBody home={doc.node} />
     </Layout>
   )

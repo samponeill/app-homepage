@@ -37,7 +37,7 @@ export default props => (
   <StaticQuery
     query={graphql`
       {
-        prismic{
+        prismic {
           allIndexs {
             edges {
               node {
