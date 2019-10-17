@@ -22,7 +22,7 @@ class Navbar extends React.Component {
                 <div className="burger-button-wrap"
                     onClick={this.toggleMenu}
                 >
-                    <div
+                    <button
                     name="Menu"
                     aria-expanded={this.state.showMenu}
                     className={`burger-button burger ${burgerActive}`}
@@ -30,8 +30,9 @@ class Navbar extends React.Component {
                             <span id="burgertop"></span>
                             <span id="burgermid"></span>
                             <span id="burgerbtm"></span>
-                    </div>
-                    <label for="Menu">Menu</label>                          
+                    </button>
+                    <label for="Menu">Menu</label>
+                                            
                 </div>                            
                 <div className={`navbar-menu ${menuActive}`} >
                     <div className="navbar-start">

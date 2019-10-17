@@ -41,24 +41,22 @@ header {
             left: 0;
             width: 100%;
             height: 100vh;
-            padding-top: 1rem;
             z-index: 100;
             position: fixed;
             display: none;
             opacity: 0;
             transition: opacity .25s .1s, display 0.25s 0.1s;
-            border: $border;
-            border-radius: $radius;
             box-sizing: border-box;
+            background: $background;
             .navbar-start {
                 box-sizing: border-box;
                 margin: 2px;
                 .navbar-link-wrapper {
                     border-radius: 2px;
                     display: block;
-                    padding: 1rem 0.75rem;
+                    padding: 1.5rem 0.75rem;
                     background: $background;
-                    transition: background 0.25s, color 0.25s;
+                    transition: background-color 0.25s, color 0.25s;
                     .navbar-link {
                         box-sizing: border-box;
                     }
@@ -66,11 +64,16 @@ header {
                 a.navbar-link-wrapper::after {
                     content: none;
                 }                 
-                a.navbar-link-wrapper:hover, a.navbar-link-wrapper.active {
+                a.navbar-link-wrapper.active {
                     background: $primary;
-                    transition: background 0.25s, color 0.25s;
+                    transition: background-color 0.25s, color 0.25s;
                     color: $background;
                 }
+                a.navbar-link-wrapper:hover:not(.active) {
+                    background: $bluegrey;
+                    transition: background-color 0.25s, color 0.25s;
+                    color: $pathway;
+                }                
                 a.navbar-link-wrapper:hover:after {
                     content: none;
                 } 

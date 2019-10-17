@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layouts"
-import SEO from "../components/seo"
+import { Helmet } from 'react-helmet'
 
 const RegisterForm = () => (
   <Layout>
-    <SEO title="Contact us" />
+    <Helmet title="Contact us" />
     <section className="page">
         <div className="column">
         <h1>Find out more</h1>
