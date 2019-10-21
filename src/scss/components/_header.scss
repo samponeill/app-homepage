@@ -69,7 +69,7 @@ header {
                     transition: background-color 0.25s, color 0.25s;
                     color: $background;
                 }
-                a.navbar-link-wrapper:hover:not(.active) {
+                a.navbar-link-wrapper:hover:not(.active):not(.navbar-link-wrapper) {
                     background: $bluegrey;
                     transition: background-color 0.25s, color 0.25s;
                     color: $pathway;
